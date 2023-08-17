@@ -11,38 +11,34 @@
   <meta charset="utf-8">
 
   
-  <title>All Posts - Muliminty</title>
+  <title>hexo使用笔记</title>
   
-  <link rel="canonical" href="http://example.com/archives/2020/10/">
+  <link rel="canonical" href="http://example.com/2023/08/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/">
   
-  <meta name="description" content="">
+  <meta name="description" content="安装安装 Hexo 相当简单，只需要先安装下列应用程序即可：  Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本) Git  安装hexo所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。 npm install -g hexo">
   
   
   <meta name="author" content="Muliminty">
   
   
-  <meta property="og:image" content="http://example.com/images/thumbnail.jpg">
-  
   
   <meta property="og:site_name" content="Muliminty-Blog" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="All Posts - Muliminty" />
+  <meta property="og:title" content="hexo使用笔记" />
   
-  <meta property="og:description" content="">
+  <meta property="og:description" content="安装安装 Hexo 相当简单，只需要先安装下列应用程序即可：  Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本) Git  安装hexo所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。 npm install -g hexo">
   
-  <meta property="og:url" content="http://example.com/archives/2020/10/" />
+  <meta property="og:url" content="http://example.com/2023/08/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="All Posts - Muliminty">
+  <meta name="twitter:title" content="hexo使用笔记">
   
-  <meta name="twitter:description" content="">
-  
-  
-  
-  <meta name="twitter:image" content="http://example.com/images/thumbnail.jpg">
+  <meta name="twitter:description" content="安装安装 Hexo 相当简单，只需要先安装下列应用程序即可：  Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本) Git  安装hexo所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。 npm install -g hexo">
   
   
-  <meta name="twitter:url" content="http://example.com/archives/2020/10/" />
+  
+  
+  <meta name="twitter:url" content="http://example.com/2023/08/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/" />
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -187,32 +183,57 @@
 </div>
 
         <div class="trans">
-          
-<h2>All Posts</h2>
+            <h2>hexo使用笔记</h2>
 
+  <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装 Hexo 相当简单，只需要先安装下列应用程序即可：</p>
+<ul>
+<li>Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
+<li>Git</li>
+</ul>
+<h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-g</span> hexo-cli<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-    <article>
-      <div class="row">
+<h3 id="进阶安装和使用"><a href="#进阶安装和使用" class="headerlink" title="进阶安装和使用"></a>进阶安装和使用</h3><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-        <div class="three columns left lit">
-          <p class="bottom">Oct 11, 2020</p>
-        </div>
-        <div class="nine columns left mb-3">
-          <a href="/2020/10/11/test/" class="">
-            
-              md样式测试
-            
-          </a>
-        </div>
-      </div>
-    </article>
+<h2 id="常见指令"><a href="#常见指令" class="headerlink" title="常见指令"></a>常见指令</h2><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">常见命令：
+hexo new <span class="token string">"postName"</span>      <span class="token comment"># 新建文章</span>
+hexo new page <span class="token string">"pageName"</span> <span class="token comment"># 新建页面</span>
+hexo generate            <span class="token comment"># 生成静态页面至public目录</span>
+hexo server              <span class="token comment"># 开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span>
+hexo deploy              <span class="token comment"># 部署到GitHub,</span>
+hexo <span class="token builtin class-name">help</span>                <span class="token comment"># 查看帮助</span>
+hexo version             <span class="token comment"># 查看Hexo的版本</span>
+缩写命令：
+hexo n <span class="token operator">==</span> hexo new
+hexo g <span class="token operator">==</span> hexo generate
+hexo s <span class="token operator">==</span> hexo server
+hexo d <span class="token operator">==</span> hexo deploy
+组合命令：
+hexo s <span class="token parameter variable">-g</span>   <span class="token comment"># 生成并本地预览</span>
+hexo d <span class="token parameter variable">-g</span>   <span class="token comment"># 生成并上传</span>
+hexo g <span class="token parameter variable">-d</span>   <span class="token comment"># 提交编译</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<div class="pagination-bar">
-  <ul class="pagination">
-    
-    
-  </ul>
-</div>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">官方配置文档</a></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="导入图片"><a href="#导入图片" class="headerlink" title="导入图片"></a>导入图片</h3><p>第一步：修改项目根目录下的_config.yml文件参数post_asset_folder值为true</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 开始使用本地静态资源</span>
+post_asset_folder: <span class="token boolean">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>第二步：安装hexo-asset-img插件</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-asset-img <span class="token parameter variable">--save</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>完成上述配置后，在使用命令hexo new post新建文章时，将会在source&#x2F;_posts目录下创建一个与文章同名的目录</p>
+<p>如图</p>
+<img src="/2023/08/17/hexo%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/Snipaste_2023-08-17_10-04-30.png" class="" title="image">
+
+<p>如上，新建“hexo使用笔记.md”时，将会在_posts目录下创建同名文件夹“hexo使用笔记”，在“hexo使用笔记.md”文件中需要引入的图片文件只要放在目录“hexo使用笔记”下即可。<br>图片引用方式：</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 引用图片的时候一定要带上目录名称作为路径</span>
+<span class="token punctuation">&#123;</span>% asset_img 本地图片.jpg 本地图片 %<span class="token punctuation">&#125;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+  <p> — Aug 17, 2023</p>
+  
 
 
         </div>
